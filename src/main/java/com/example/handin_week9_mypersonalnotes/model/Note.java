@@ -2,16 +2,15 @@ package com.example.handin_week9_mypersonalnotes.model;
 
 public class Note {
 
-    private String title;
-    private String description;
+    String title = "";
+    String description = "";
+    String id = "";
 
-    public Note(String title, String description) {
+    public Note(String id, String title, String description) {
         this.title = title;
         this.description = description;
+        this.id = id;
     }
-
-    // empty constructor needed
-    public Note() { }
 
     public String getTitle() {
         return title;
@@ -20,4 +19,9 @@ public class Note {
     public String getDescription() {
         return description;
     }
+
+    public String getId() {
+        return id;
+    }
+
 }
