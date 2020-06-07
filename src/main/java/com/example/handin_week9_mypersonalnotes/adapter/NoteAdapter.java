@@ -1,7 +1,6 @@
 package com.example.handin_week9_mypersonalnotes.adapter;
 
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,11 +8,10 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AlertDialog;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.handin_week9_mypersonalnotes.DetailsActivity;
-import com.example.handin_week9_mypersonalnotes.MainActivity;
+import com.example.handin_week9_mypersonalnotes.ui.DetailsActivity;
+import com.example.handin_week9_mypersonalnotes.ui.MainActivity;
 import com.example.handin_week9_mypersonalnotes.R;
 import com.example.handin_week9_mypersonalnotes.model.Note;
 import com.example.handin_week9_mypersonalnotes.view.ViewHolder;
@@ -53,8 +51,7 @@ public class NoteAdapter extends RecyclerView.Adapter<ViewHolder> {
 
             @Override
             public void onItemClick(View view, final int position) {
-                //this will be called when user long clicks item
-                // update is clicked
+                //this will be called when user  clicks item
                 //get data
                 String id = notes.get(position).getId();
                 String title = notes.get(position).getTitle();
